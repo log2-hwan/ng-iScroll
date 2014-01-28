@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Demo</title>
+    <link rel="stylesheet" type="text/css" href="./demo.css">
+    <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.6/angular.js'></script>
+    <script type='text/javascript' src='http://rawgithub.com/cubiq/iscroll/v4/src/iscroll.js'></script>
+    <script type="text/javascript" src="../src/ng-iscroll.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+</head>
+
+<div id="header"><a href="http://cubiq.org/iscroll">iScroller Test</a></div>
+
+<div ng-app='App'>
+    <div ng-controller='Controller'>
+
+   <div id="wrapper" ng-init="list=[]" ng-iscroll ng-iscroll-delay='50' ng-iscroll-refresher="list.length">
+	<div id="scroller">
+		<ul id="thelist">
+			<li ng-repeat="item in list">Pretty row {{$index+1}}</li>
+			<li><button ng-click="list.push({})">Add row</button></li>
+		</ul>
+	</div>
+</div>
+	</div>
+
+
+</div>
+<div id="footer"></div>

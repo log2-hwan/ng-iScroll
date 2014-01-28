@@ -7,6 +7,4 @@ App.controller('Controller', function ($scope)
     $scope.$parent.myScrollOptions = {
         snap: false
     };
-    
-    $scope.list = [];
 });
